@@ -10,6 +10,8 @@
 	<string>EasternPioneerBusSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>http://github.com/Alamofire/Alamofire.git</string>
 		<key>E7EC1897AA00718F00AB0763413803D2101B15A1</key>
 		<string>https://github.com/gree2/EasternPioneerBusSwift.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>EasternPioneerBusSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>../..Alamofire/</string>
 		<key>E7EC1897AA00718F00AB0763413803D2101B15A1</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>E7EC1897AA00718F00AB0763413803D2101B15A1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Alamofire</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

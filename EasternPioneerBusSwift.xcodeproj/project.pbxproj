@@ -13,6 +13,17 @@
 		D2CF1CB61AB41A2F008AEB4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1CB51AB41A2F008AEB4D /* Images.xcassets */; };
 		D2CF1CB91AB41A2F008AEB4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1CB71AB41A2F008AEB4D /* LaunchScreen.xib */; };
 		D2CF1CC51AB41A2F008AEB4D /* EasternPioneerBusSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CC41AB41A2F008AEB4D /* EasternPioneerBusSwiftTests.swift */; };
+		D2CF1CE01AB420DD008AEB4D /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D2CF1CD61AB42012008AEB4D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D2CF1CE21AB4213D008AEB4D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CF1CE11AB4213D008AEB4D /* Realm.framework */; };
+		D2CF1CE41AB4216C008AEB4D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CF1CE31AB4216C008AEB4D /* libc++.dylib */; };
+		D2CF1CE61AB4218C008AEB4D /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CE51AB4218C008AEB4D /* RLMSupport.swift */; };
+		D2CF1CED1AB42593008AEB4D /* HTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CEA1AB42593008AEB4D /* HTMLDocument.swift */; };
+		D2CF1CEE1AB42593008AEB4D /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CEB1AB42593008AEB4D /* HTMLNode.swift */; };
+		D2CF1CEF1AB42593008AEB4D /* HTMLNode+XPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CEC1AB42593008AEB4D /* HTMLNode+XPath.swift */; };
+		D2CF1CF11AB425D8008AEB4D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CF1CF01AB425D8008AEB4D /* libxml2.dylib */; };
+		D2CF1CF41AB42845008AEB4D /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF31AB42845008AEB4D /* BusStop.swift */; };
+		D2CF1CF61AB42865008AEB4D /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF51AB42865008AEB4D /* BusLine.swift */; };
+		D2CF1CF81AB42D10008AEB4D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF71AB42D10008AEB4D /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +34,56 @@
 			remoteGlobalIDString = D2CF1CA81AB41A2F008AEB4D;
 			remoteInfo = EasternPioneerBusSwift;
 		};
+		D2CF1CD51AB42012008AEB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		D2CF1CD71AB42012008AEB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		D2CF1CD91AB42012008AEB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		D2CF1CDB1AB42012008AEB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		D2CF1CDD1AB42087008AEB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2CF1CDF1AB420A5008AEB4D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D2CF1CE01AB420DD008AEB4D /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D2CF1CA91AB41A2F008AEB4D /* EasternPioneerBusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasternPioneerBusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +96,18 @@
 		D2CF1CBE1AB41A2F008AEB4D /* EasternPioneerBusSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasternPioneerBusSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF1CC31AB41A2F008AEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CF1CC41AB41A2F008AEB4D /* EasternPioneerBusSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasternPioneerBusSwiftTests.swift; sourceTree = "<group>"; };
+		D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		D2CF1CE11AB4213D008AEB4D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D2CF1CE31AB4216C008AEB4D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D2CF1CE51AB4218C008AEB4D /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		D2CF1CE91AB42593008AEB4D /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D2CF1CEA1AB42593008AEB4D /* HTMLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLDocument.swift; sourceTree = "<group>"; };
+		D2CF1CEB1AB42593008AEB4D /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
+		D2CF1CEC1AB42593008AEB4D /* HTMLNode+XPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTMLNode+XPath.swift"; sourceTree = "<group>"; };
+		D2CF1CF01AB425D8008AEB4D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D2CF1CF31AB42845008AEB4D /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		D2CF1CF51AB42865008AEB4D /* BusLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
+		D2CF1CF71AB42D10008AEB4D /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF1CF11AB425D8008AEB4D /* libxml2.dylib in Frameworks */,
+				D2CF1CE41AB4216C008AEB4D /* libc++.dylib in Frameworks */,
+				D2CF1CE21AB4213D008AEB4D /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +134,11 @@
 		D2CF1CA01AB41A2F008AEB4D = {
 			isa = PBXGroup;
 			children = (
+				D2CF1CF01AB425D8008AEB4D /* libxml2.dylib */,
+				D2CF1CE51AB4218C008AEB4D /* RLMSupport.swift */,
+				D2CF1CE31AB4216C008AEB4D /* libc++.dylib */,
+				D2CF1CE11AB4213D008AEB4D /* Realm.framework */,
+				D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */,
 				D2CF1CAB1AB41A2F008AEB4D /* EasternPioneerBusSwift */,
 				D2CF1CC11AB41A2F008AEB4D /* EasternPioneerBusSwiftTests */,
 				D2CF1CAA1AB41A2F008AEB4D /* Products */,
@@ -77,6 +157,8 @@
 		D2CF1CAB1AB41A2F008AEB4D /* EasternPioneerBusSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF1CF21AB42817008AEB4D /* Model */,
+				D2CF1CE81AB4255C008AEB4D /* HTMLDocument */,
 				D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */,
 				D2CF1CB01AB41A2F008AEB4D /* ViewController.swift */,
 				D2CF1CB21AB41A2F008AEB4D /* Main.storyboard */,
@@ -112,6 +194,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2CF1CCF1AB42012008AEB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF1CD61AB42012008AEB4D /* Alamofire.framework */,
+				D2CF1CD81AB42012008AEB4D /* Alamofire.framework */,
+				D2CF1CDA1AB42012008AEB4D /* Alamofire iOS Tests.xctest */,
+				D2CF1CDC1AB42012008AEB4D /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2CF1CE81AB4255C008AEB4D /* HTMLDocument */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF1CE91AB42593008AEB4D /* Bridging-Header.h */,
+				D2CF1CEA1AB42593008AEB4D /* HTMLDocument.swift */,
+				D2CF1CEB1AB42593008AEB4D /* HTMLNode.swift */,
+				D2CF1CEC1AB42593008AEB4D /* HTMLNode+XPath.swift */,
+			);
+			name = HTMLDocument;
+			sourceTree = "<group>";
+		};
+		D2CF1CF21AB42817008AEB4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF1CF31AB42845008AEB4D /* BusStop.swift */,
+				D2CF1CF51AB42865008AEB4D /* BusLine.swift */,
+				D2CF1CF71AB42D10008AEB4D /* Parser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +236,12 @@
 				D2CF1CA51AB41A2F008AEB4D /* Sources */,
 				D2CF1CA61AB41A2F008AEB4D /* Frameworks */,
 				D2CF1CA71AB41A2F008AEB4D /* Resources */,
+				D2CF1CDF1AB420A5008AEB4D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2CF1CDE1AB42087008AEB4D /* PBXTargetDependency */,
 			);
 			name = EasternPioneerBusSwift;
 			productName = EasternPioneerBusSwift;
@@ -179,6 +295,12 @@
 			mainGroup = D2CF1CA01AB41A2F008AEB4D;
 			productRefGroup = D2CF1CAA1AB41A2F008AEB4D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D2CF1CCF1AB42012008AEB4D /* Products */;
+					ProjectRef = D2CF1CCE1AB42012008AEB4D /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2CF1CA81AB41A2F008AEB4D /* EasternPioneerBusSwift */,
@@ -186,6 +308,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D2CF1CD61AB42012008AEB4D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D2CF1CD51AB42012008AEB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2CF1CD81AB42012008AEB4D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D2CF1CD71AB42012008AEB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2CF1CDA1AB42012008AEB4D /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = D2CF1CD91AB42012008AEB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2CF1CDC1AB42012008AEB4D /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = D2CF1CDB1AB42012008AEB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D2CF1CA71AB41A2F008AEB4D /* Resources */ = {
@@ -212,7 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF1CEF1AB42593008AEB4D /* HTMLNode+XPath.swift in Sources */,
 				D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */,
+				D2CF1CF61AB42865008AEB4D /* BusLine.swift in Sources */,
+				D2CF1CED1AB42593008AEB4D /* HTMLDocument.swift in Sources */,
+				D2CF1CF41AB42845008AEB4D /* BusStop.swift in Sources */,
+				D2CF1CF81AB42D10008AEB4D /* Parser.swift in Sources */,
+				D2CF1CE61AB4218C008AEB4D /* RLMSupport.swift in Sources */,
+				D2CF1CEE1AB42593008AEB4D /* HTMLNode.swift in Sources */,
 				D2CF1CAF1AB41A2F008AEB4D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = D2CF1CA81AB41A2F008AEB4D /* EasternPioneerBusSwift */;
 			targetProxy = D2CF1CBF1AB41A2F008AEB4D /* PBXContainerItemProxy */;
+		};
+		D2CF1CDE1AB42087008AEB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = D2CF1CDD1AB42087008AEB4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,9 +503,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SDKROOT/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = EasternPioneerBusSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasternPioneerBusSwift/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -348,9 +524,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SDKROOT/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = EasternPioneerBusSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasternPioneerBusSwift/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +594,7 @@
 				D2CF1CCA1AB41A2F008AEB4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2CF1CCB1AB41A2F008AEB4D /* Build configuration list for PBXNativeTarget "EasternPioneerBusSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +603,7 @@
 				D2CF1CCD1AB41A2F008AEB4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
