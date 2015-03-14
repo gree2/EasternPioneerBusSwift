@@ -32,7 +32,7 @@ class Parser{
         
         // Get the default Realm
         let realm = RLMRealm.defaultRealm()
-        println(realm.path)
+        //println(realm.path)
         
         // get bus stop info
         if let tables = body?.nodesForXPath("//*//div[@class='sjz_ejmsgbox']//div//table"){

@@ -24,6 +24,23 @@
 		D2CF1CF41AB42845008AEB4D /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF31AB42845008AEB4D /* BusStop.swift */; };
 		D2CF1CF61AB42865008AEB4D /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF51AB42865008AEB4D /* BusLine.swift */; };
 		D2CF1CF81AB42D10008AEB4D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CF71AB42D10008AEB4D /* Parser.swift */; };
+		D2CF1CFB1AB46FBF008AEB4D /* BusLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CFA1AB46FBF008AEB4D /* BusLineViewController.swift */; };
+		D2CF1CFD1AB47028008AEB4D /* BusStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CFC1AB47028008AEB4D /* BusStopViewController.swift */; };
+		D2CF1CFF1AB4709A008AEB4D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CFE1AB4709A008AEB4D /* ContainerViewController.swift */; };
+		D2CF1D011AB470D1008AEB4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1D001AB470D1008AEB4D /* DetailViewController.swift */; };
+		D2CF1D031AB47141008AEB4D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1D021AB47141008AEB4D /* SettingViewController.swift */; };
+		D2CF1D111AB4850E008AEB4D /* access_alarms.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D051AB4850E008AEB4D /* access_alarms.png */; };
+		D2CF1D121AB4850E008AEB4D /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D061AB4850E008AEB4D /* clear.png */; };
+		D2CF1D131AB4850E008AEB4D /* directions_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D071AB4850E008AEB4D /* directions_bus.png */; };
+		D2CF1D141AB4850E008AEB4D /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D081AB4850E008AEB4D /* done.png */; };
+		D2CF1D151AB4850E008AEB4D /* headset_mic.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D091AB4850E008AEB4D /* headset_mic.png */; };
+		D2CF1D161AB4850E008AEB4D /* keyboard_arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0A1AB4850E008AEB4D /* keyboard_arrow_right.png */; };
+		D2CF1D171AB4850E008AEB4D /* live_help.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0B1AB4850E008AEB4D /* live_help.png */; };
+		D2CF1D181AB4850E008AEB4D /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0C1AB4850E008AEB4D /* location.png */; };
+		D2CF1D191AB4850E008AEB4D /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0D1AB4850E008AEB4D /* menu.png */; };
+		D2CF1D1A1AB4850E008AEB4D /* settings_applications.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0E1AB4850E008AEB4D /* settings_applications.png */; };
+		D2CF1D1B1AB4850E008AEB4D /* sync.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D0F1AB4850E008AEB4D /* sync.png */; };
+		D2CF1D1C1AB4850E008AEB4D /* visibility.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1D101AB4850E008AEB4D /* visibility.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +125,23 @@
 		D2CF1CF31AB42845008AEB4D /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		D2CF1CF51AB42865008AEB4D /* BusLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		D2CF1CF71AB42D10008AEB4D /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		D2CF1CFA1AB46FBF008AEB4D /* BusLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusLineViewController.swift; path = Controller/BusLineViewController.swift; sourceTree = "<group>"; };
+		D2CF1CFC1AB47028008AEB4D /* BusStopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusStopViewController.swift; path = Controller/BusStopViewController.swift; sourceTree = "<group>"; };
+		D2CF1CFE1AB4709A008AEB4D /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		D2CF1D001AB470D1008AEB4D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D2CF1D021AB47141008AEB4D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D2CF1D051AB4850E008AEB4D /* access_alarms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = access_alarms.png; sourceTree = "<group>"; };
+		D2CF1D061AB4850E008AEB4D /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		D2CF1D071AB4850E008AEB4D /* directions_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_bus.png; sourceTree = "<group>"; };
+		D2CF1D081AB4850E008AEB4D /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done.png; sourceTree = "<group>"; };
+		D2CF1D091AB4850E008AEB4D /* headset_mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headset_mic.png; sourceTree = "<group>"; };
+		D2CF1D0A1AB4850E008AEB4D /* keyboard_arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_arrow_right.png; sourceTree = "<group>"; };
+		D2CF1D0B1AB4850E008AEB4D /* live_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = live_help.png; sourceTree = "<group>"; };
+		D2CF1D0C1AB4850E008AEB4D /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		D2CF1D0D1AB4850E008AEB4D /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		D2CF1D0E1AB4850E008AEB4D /* settings_applications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_applications.png; sourceTree = "<group>"; };
+		D2CF1D0F1AB4850E008AEB4D /* sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync.png; sourceTree = "<group>"; };
+		D2CF1D101AB4850E008AEB4D /* visibility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visibility.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +191,8 @@
 		D2CF1CAB1AB41A2F008AEB4D /* EasternPioneerBusSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF1D041AB48474008AEB4D /* Resources */,
+				D2CF1CF91AB46EE5008AEB4D /* Controller */,
 				D2CF1CF21AB42817008AEB4D /* Model */,
 				D2CF1CE81AB4255C008AEB4D /* HTMLDocument */,
 				D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */,
@@ -224,6 +260,37 @@
 				D2CF1CF71AB42D10008AEB4D /* Parser.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D2CF1CF91AB46EE5008AEB4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF1CFA1AB46FBF008AEB4D /* BusLineViewController.swift */,
+				D2CF1CFC1AB47028008AEB4D /* BusStopViewController.swift */,
+				D2CF1CFE1AB4709A008AEB4D /* ContainerViewController.swift */,
+				D2CF1D001AB470D1008AEB4D /* DetailViewController.swift */,
+				D2CF1D021AB47141008AEB4D /* SettingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D2CF1D041AB48474008AEB4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF1D051AB4850E008AEB4D /* access_alarms.png */,
+				D2CF1D061AB4850E008AEB4D /* clear.png */,
+				D2CF1D071AB4850E008AEB4D /* directions_bus.png */,
+				D2CF1D081AB4850E008AEB4D /* done.png */,
+				D2CF1D091AB4850E008AEB4D /* headset_mic.png */,
+				D2CF1D0A1AB4850E008AEB4D /* keyboard_arrow_right.png */,
+				D2CF1D0B1AB4850E008AEB4D /* live_help.png */,
+				D2CF1D0C1AB4850E008AEB4D /* location.png */,
+				D2CF1D0D1AB4850E008AEB4D /* menu.png */,
+				D2CF1D0E1AB4850E008AEB4D /* settings_applications.png */,
+				D2CF1D0F1AB4850E008AEB4D /* sync.png */,
+				D2CF1D101AB4850E008AEB4D /* visibility.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,9 +412,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF1D171AB4850E008AEB4D /* live_help.png in Resources */,
+				D2CF1D151AB4850E008AEB4D /* headset_mic.png in Resources */,
 				D2CF1CB41AB41A2F008AEB4D /* Main.storyboard in Resources */,
+				D2CF1D161AB4850E008AEB4D /* keyboard_arrow_right.png in Resources */,
+				D2CF1D1B1AB4850E008AEB4D /* sync.png in Resources */,
+				D2CF1D111AB4850E008AEB4D /* access_alarms.png in Resources */,
+				D2CF1D131AB4850E008AEB4D /* directions_bus.png in Resources */,
+				D2CF1D141AB4850E008AEB4D /* done.png in Resources */,
+				D2CF1D121AB4850E008AEB4D /* clear.png in Resources */,
+				D2CF1D191AB4850E008AEB4D /* menu.png in Resources */,
+				D2CF1D1C1AB4850E008AEB4D /* visibility.png in Resources */,
+				D2CF1D181AB4850E008AEB4D /* location.png in Resources */,
 				D2CF1CB91AB41A2F008AEB4D /* LaunchScreen.xib in Resources */,
 				D2CF1CB61AB41A2F008AEB4D /* Images.xcassets in Resources */,
+				D2CF1D1A1AB4850E008AEB4D /* settings_applications.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,15 +444,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF1D011AB470D1008AEB4D /* DetailViewController.swift in Sources */,
 				D2CF1CEF1AB42593008AEB4D /* HTMLNode+XPath.swift in Sources */,
 				D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */,
 				D2CF1CF61AB42865008AEB4D /* BusLine.swift in Sources */,
+				D2CF1CFD1AB47028008AEB4D /* BusStopViewController.swift in Sources */,
+				D2CF1D031AB47141008AEB4D /* SettingViewController.swift in Sources */,
 				D2CF1CED1AB42593008AEB4D /* HTMLDocument.swift in Sources */,
 				D2CF1CF41AB42845008AEB4D /* BusStop.swift in Sources */,
 				D2CF1CF81AB42D10008AEB4D /* Parser.swift in Sources */,
 				D2CF1CE61AB4218C008AEB4D /* RLMSupport.swift in Sources */,
 				D2CF1CEE1AB42593008AEB4D /* HTMLNode.swift in Sources */,
 				D2CF1CAF1AB41A2F008AEB4D /* AppDelegate.swift in Sources */,
+				D2CF1CFF1AB4709A008AEB4D /* ContainerViewController.swift in Sources */,
+				D2CF1CFB1AB46FBF008AEB4D /* BusLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
