@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Realm
+import Alamofire
 
 @objc
 protocol SettingDelegate{
-
+    func backTapped()
 }
 
-class SettingViewController: UITableViewController {
+class SettingViewController: UITableViewController,
+    UITableViewDataSource, UITableViewDelegate{
+    
+    @IBOutlet var tableview: UITableView!
     
     var delegate: SettingDelegate?
 
@@ -25,71 +30,56 @@ class SettingViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //view.backgroundColor = UIColor.redColor()
     }
 
+    @IBAction func backTapped(sender: AnyObject) {
+        delegate?.backTapped()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        var row = indexPath.row;
+        switch(row){
+        case 0:
+            syncData()
+            //
+            //        case 1:
+            //        case 2:
+            
+        default:
+            break
+        }
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+    
+    //
+    func syncData(){
+        let realm = RLMRealm.defaultRealm()
+        println(realm.path)
+        
+        if let data: AnyObject = Config.objectsWhere("key = 'sync'").firstObject(){
+            let config = data as Config
+            if "true" != config.value{
+                requestData()
+            }
+        }
+        else{
+            requestData()
+        }
     }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+    
+    //
+    func requestData(){
+        Alamofire.request(.GET, "http://wsyc.dfss.com.cn/home/BCView")
+            .responseString{ (_,_, string, _ ) in
+                let parser = Parser(html:string!)
+                parser.parse()
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

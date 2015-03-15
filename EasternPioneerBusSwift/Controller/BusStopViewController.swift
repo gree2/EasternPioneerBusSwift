@@ -46,11 +46,23 @@ class BusStopViewController: UITableViewController,
         tableview.reloadData()
     }
     
+    @IBAction func busLineTapped(sender: AnyObject) {
+        delegate?.toggleBusLine!()
+    }
+    
+    @IBAction func settingTapped(sender: AnyObject) {
+        delegate?.toggleSetting!()
+    }
+    
     func busLineSelected(busLine: BusLine) {
         busStops = BusStop.objectsWhere("busLineId = \(busLine.id)")
             .sortedResultsUsingProperty("stopIndex", ascending: true)
         tableview.reloadData()
         delegate?.toggleBusLine!()
+    }
+    
+    func backTapped() {
+        delegate?.toggleSetting!()
     }
 
     override func didReceiveMemoryWarning() {

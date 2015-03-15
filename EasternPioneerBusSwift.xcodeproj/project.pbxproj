@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2C923061AB5B520007126AB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C923051AB5B520007126AB /* Config.swift */; };
 		D2CF1CAF1AB41A2F008AEB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */; };
 		D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CB01AB41A2F008AEB4D /* ViewController.swift */; };
 		D2CF1CB41AB41A2F008AEB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CF1CB21AB41A2F008AEB4D /* Main.storyboard */; };
@@ -103,6 +104,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D2C923051AB5B520007126AB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D2CF1CA91AB41A2F008AEB4D /* EasternPioneerBusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasternPioneerBusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF1CAD1AB41A2F008AEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -255,8 +257,9 @@
 		D2CF1CF21AB42817008AEB4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D2CF1CF31AB42845008AEB4D /* BusStop.swift */,
 				D2CF1CF51AB42865008AEB4D /* BusLine.swift */,
+				D2CF1CF31AB42845008AEB4D /* BusStop.swift */,
+				D2C923051AB5B520007126AB /* Config.swift */,
 				D2CF1CF71AB42D10008AEB4D /* Parser.swift */,
 			);
 			name = Model;
@@ -446,6 +449,7 @@
 			files = (
 				D2CF1D011AB470D1008AEB4D /* DetailViewController.swift in Sources */,
 				D2CF1CEF1AB42593008AEB4D /* HTMLNode+XPath.swift in Sources */,
+				D2C923061AB5B520007126AB /* Config.swift in Sources */,
 				D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */,
 				D2CF1CF61AB42865008AEB4D /* BusLine.swift in Sources */,
 				D2CF1CFD1AB47028008AEB4D /* BusStopViewController.swift in Sources */,

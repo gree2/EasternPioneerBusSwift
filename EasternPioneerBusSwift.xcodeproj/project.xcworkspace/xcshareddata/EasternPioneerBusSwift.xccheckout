@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../..Alamofire/</string>
+		<string>../..Alamofire</string>
 		<key>E7EC1897AA00718F00AB0763413803D2101B15A1</key>
 		<string>../..</string>
 	</dict>
@@ -36,17 +36,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<string>E7EC1897AA00718F00AB0763413803D2101B15A1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Alamofire</string>
+			<string>EasternPioneerBusSwift</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E7EC1897AA00718F00AB0763413803D2101B15A1</string>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
 			<key>IDESourceControlWCCName</key>
-			<string>EasternPioneerBusSwift</string>
+			<string>EasternPioneerBusSwiftAlamofire</string>
 		</dict>
 	</array>
 </dict>

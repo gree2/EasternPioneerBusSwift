@@ -173,7 +173,7 @@ class ContainerViewController: UIViewController,
     
     func addSettingController(settingController: SettingViewController){
         settingController.delegate = busStopController
-        view.insertSubview(settingController.view, atIndex: 0)
+        view.insertSubview(settingController.view, atIndex: 1)
         addChildViewController(settingController)
         settingController.didMoveToParentViewController(self)
     }

@@ -21,18 +21,25 @@ class Parser{
     }
     
     func parse(){
+        
+        // get the default Realm
+        let realm = RLMRealm.defaultRealm()
+        //println(realm.path)
+        var config = Config()
         var err : NSError?
         var parser = HTMLDocument(data: theHtml.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true), error: &err)
         if err != nil {
-            success = false
+            config.key = "sync"
+            config.value = "false"
+            realm.beginWriteTransaction()
+            realm.addObject(config)
+            realm.commitWriteTransaction()
             return
         }
         
         body = parser?.body
         
-        // Get the default Realm
-        let realm = RLMRealm.defaultRealm()
-        //println(realm.path)
+
         
         // get bus stop info
         if let tables = body?.nodesForXPath("//*//div[@class='sjz_ejmsgbox']//div//table"){
@@ -113,6 +120,11 @@ class Parser{
                     realm.commitWriteTransaction()
                 } // end if
             } // end for
+            config.key = "sync"
+            config.value = "true"
+            realm.beginWriteTransaction()
+            realm.addObject(config)
+            realm.commitWriteTransaction()
         } // end if
     }
 }

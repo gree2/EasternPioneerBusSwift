@@ -16,6 +16,8 @@ protocol BusLineDelegate{
 class BusLineViewController: UITableViewController,
     UITableViewDataSource, UITableViewDelegate{
     
+    @IBOutlet var tableview: UITableView!
+    
     var delegate: BusLineDelegate?
     
     let busLines = BusLine.allObjects()
@@ -35,6 +37,7 @@ class BusLineViewController: UITableViewController,
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableview.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -82,7 +85,10 @@ class BusLineViewController: UITableViewController,
 
 class BusLineCell: UITableViewCell {
     
-    func configure(busLine: BusLine){
+    @IBOutlet weak var lineNameLabel: UILabel!
     
+    
+    func configure(busLine: BusLine){
+        lineNameLabel.text = String(busLine.lineIndex) + " " + busLine.lineName
     }
 }
