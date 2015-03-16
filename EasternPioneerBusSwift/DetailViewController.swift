@@ -93,5 +93,15 @@ class DetailViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        MobClick.beginLogPageView("DetailViewController")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        MobClick.endLogPageView("DetailViewController")
+    }
 
 }

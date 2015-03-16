@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25D4EAE1AB73584000ED00B /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */; };
+		D25D4EB31AB7363F000ED00B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D25D4EB21AB7363F000ED00B /* libz.dylib */; };
 		D2C923061AB5B520007126AB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C923051AB5B520007126AB /* Config.swift */; };
 		D2CF1CAF1AB41A2F008AEB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */; };
 		D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CB01AB41A2F008AEB4D /* ViewController.swift */; };
@@ -104,6 +106,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		D25D4EAD1AB73584000ED00B /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		D25D4EB21AB7363F000ED00B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D2C923051AB5B520007126AB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D2CF1CA91AB41A2F008AEB4D /* EasternPioneerBusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasternPioneerBusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF1CAD1AB41A2F008AEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,9 +156,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25D4EB31AB7363F000ED00B /* libz.dylib in Frameworks */,
 				D2CF1CF11AB425D8008AEB4D /* libxml2.dylib in Frameworks */,
 				D2CF1CE41AB4216C008AEB4D /* libc++.dylib in Frameworks */,
 				D2CF1CE21AB4213D008AEB4D /* Realm.framework in Frameworks */,
+				D25D4EAE1AB73584000ED00B /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +177,9 @@
 		D2CF1CA01AB41A2F008AEB4D = {
 			isa = PBXGroup;
 			children = (
+				D25D4EB21AB7363F000ED00B /* libz.dylib */,
+				D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */,
+				D25D4EAD1AB73584000ED00B /* MobClick.h */,
 				D2CF1CF01AB425D8008AEB4D /* libxml2.dylib */,
 				D2CF1CE51AB4218C008AEB4D /* RLMSupport.swift */,
 				D2CF1CE31AB4216C008AEB4D /* libc++.dylib */,
@@ -602,6 +612,10 @@
 				);
 				INFOPLIST_FILE = EasternPioneerBusSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasternPioneerBusSwift/Bridging-Header.h";
@@ -623,6 +637,10 @@
 				);
 				INFOPLIST_FILE = EasternPioneerBusSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasternPioneerBusSwift/Bridging-Header.h";

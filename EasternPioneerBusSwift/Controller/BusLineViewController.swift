@@ -81,6 +81,16 @@ class BusLineViewController: UITableViewController,
     }
     */
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        MobClick.beginLogPageView("BusLineViewController")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        MobClick.endLogPageView("BusLineViewController")
+    }
+    
 }
 
 class BusLineCell: UITableViewCell {

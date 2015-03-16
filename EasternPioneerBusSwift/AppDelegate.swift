@@ -14,12 +14,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // BATCH SEND_INTERVAL
+        MobClick.startWithAppkey("54ec21fdfd98c5b168000500", reportPolicy: BATCH, channelId: "")
+        MobClick.setAppVersion(getAppVersion())
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let container = ContainerViewController()
         window!.rootViewController = container
         window!.makeKeyAndVisible()
         return true
+    }
+    
+    func getAppVersion() -> String {
+        let dictionary = NSBundle.mainBundle().infoDictionary!
+        let version = dictionary["CFBundleShortVersionString"] as String
+        let build = dictionary["CFBundleVersion"] as String
+        println(version)
+        println(build)
+        return "\(version).\(build)"
     }
 
     func applicationWillResignActive(application: UIApplication) {

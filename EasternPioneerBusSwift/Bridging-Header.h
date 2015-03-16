@@ -8,6 +8,8 @@
 #import <libxml/xpathInternals.h>
 #import <libxml/xmlerror.h>
 
+#import "mobclick.h"
+
 static inline UInt32 xmlElementTypeToInt(xmlElementType type) {
     return (UInt32) type;
 }

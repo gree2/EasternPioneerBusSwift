@@ -100,6 +100,16 @@ class BusStopViewController: UITableViewController,
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        MobClick.beginLogPageView("BusStopViewController")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        MobClick.endLogPageView("BusStopViewController")
+    }
 
 }
 
