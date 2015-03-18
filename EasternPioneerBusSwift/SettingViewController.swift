@@ -49,8 +49,8 @@ class SettingViewController: UITableViewController,
             syncData()
             //
             //        case 1:
-            //        case 2:
-            
+        case 2:
+            feedback()
         default:
             break
         }
@@ -79,6 +79,12 @@ class SettingViewController: UITableViewController,
                 let parser = Parser(html:string!)
                 parser.parse()
         }
+    }
+    
+    func feedback(){
+        self.presentViewController(UMFeedback.feedbackViewController(), animated: true){ () -> Void in }
+
+        //navigationController?.pushViewController(UMFeedback.feedbackViewController(), animated: true)
     }
 
     /*

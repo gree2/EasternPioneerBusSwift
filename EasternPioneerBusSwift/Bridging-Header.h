@@ -9,6 +9,7 @@
 #import <libxml/xmlerror.h>
 
 #import "mobclick.h"
+#import "UMFeedback.h"
 
 static inline UInt32 xmlElementTypeToInt(xmlElementType type) {
     return (UInt32) type;

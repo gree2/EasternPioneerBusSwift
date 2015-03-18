@@ -15,8 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // BATCH SEND_INTERVAL
-        MobClick.startWithAppkey("54ec21fdfd98c5b168000500", reportPolicy: BATCH, channelId: "")
+        let appKey = "54ec21fdfd98c5b168000500"
+        MobClick.startWithAppkey(appKey, reportPolicy: BATCH, channelId: "")
         MobClick.setAppVersion(getAppVersion())
+        UMFeedback.setAppkey(appKey)
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let container = ContainerViewController()

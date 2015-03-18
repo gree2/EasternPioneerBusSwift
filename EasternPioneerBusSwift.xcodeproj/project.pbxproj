@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		D25D4EAE1AB73584000ED00B /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */; };
 		D25D4EB31AB7363F000ED00B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D25D4EB21AB7363F000ED00B /* libz.dylib */; };
+		D272EDC31AB8FAFC00330F59 /* UMFeedbackLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D272EDAB1AB8FAFC00330F59 /* UMFeedbackLocalizable.strings */; };
+		D272EDC41AB8FAFC00330F59 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D272EDAD1AB8FAFC00330F59 /* libUMFeedback.a */; };
+		D272EDC51AB8FAFC00330F59 /* bubble_min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDAF1AB8FAFC00330F59 /* bubble_min@2x.png */; };
+		D272EDC61AB8FAFC00330F59 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB01AB8FAFC00330F59 /* cancel@2x.png */; };
+		D272EDC71AB8FAFC00330F59 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB11AB8FAFC00330F59 /* microphone@2x.png */; };
+		D272EDC81AB8FAFC00330F59 /* save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB21AB8FAFC00330F59 /* save@2x.png */; };
+		D272EDC91AB8FAFC00330F59 /* ToolViewInputText@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB31AB8FAFC00330F59 /* ToolViewInputText@2x.png */; };
+		D272EDCA1AB8FAFC00330F59 /* ToolViewInputTextHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB41AB8FAFC00330F59 /* ToolViewInputTextHL@2x.png */; };
+		D272EDCB1AB8FAFC00330F59 /* ToolViewInputVoice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB51AB8FAFC00330F59 /* ToolViewInputVoice@2x.png */; };
+		D272EDCC1AB8FAFC00330F59 /* ToolViewInputVoiceHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB61AB8FAFC00330F59 /* ToolViewInputVoiceHL@2x.png */; };
+		D272EDCD1AB8FAFC00330F59 /* umeng_fb_audio_dialog_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB71AB8FAFC00330F59 /* umeng_fb_audio_dialog_cancel@2x.png */; };
+		D272EDCE1AB8FAFC00330F59 /* umeng_fb_audio_dialog_content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB81AB8FAFC00330F59 /* umeng_fb_audio_dialog_content@2x.png */; };
+		D272EDCF1AB8FAFC00330F59 /* umeng_fb_audio_play_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDB91AB8FAFC00330F59 /* umeng_fb_audio_play_01@2x.png */; };
+		D272EDD01AB8FAFC00330F59 /* umeng_fb_audio_play_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDBA1AB8FAFC00330F59 /* umeng_fb_audio_play_02@2x.png */; };
+		D272EDD11AB8FAFC00330F59 /* umeng_fb_audio_play_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDBB1AB8FAFC00330F59 /* umeng_fb_audio_play_03@2x.png */; };
+		D272EDD21AB8FAFC00330F59 /* umeng_fb_audio_play_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D272EDBC1AB8FAFC00330F59 /* umeng_fb_audio_play_default@2x.png */; };
+		D272EDD31AB8FAFC00330F59 /* libUMOpus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D272EDBF1AB8FAFC00330F59 /* libUMOpus.a */; };
+		D272EDD51AB8FB6300330F59 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D272EDD41AB8FB6300330F59 /* AVFoundation.framework */; };
 		D2C923061AB5B520007126AB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C923051AB5B520007126AB /* Config.swift */; };
 		D2CF1CAF1AB41A2F008AEB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */; };
 		D2CF1CB11AB41A2F008AEB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1CB01AB41A2F008AEB4D /* ViewController.swift */; };
@@ -109,6 +127,28 @@
 		D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
 		D25D4EAD1AB73584000ED00B /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		D25D4EB21AB7363F000ED00B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D272EDAC1AB8FAFC00330F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/UMFeedbackLocalizable.strings; sourceTree = "<group>"; };
+		D272EDAD1AB8FAFC00330F59 /* libUMFeedback.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMFeedback.a; sourceTree = "<group>"; };
+		D272EDAF1AB8FAFC00330F59 /* bubble_min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_min@2x.png"; sourceTree = "<group>"; };
+		D272EDB01AB8FAFC00330F59 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
+		D272EDB11AB8FAFC00330F59 /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
+		D272EDB21AB8FAFC00330F59 /* save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save@2x.png"; sourceTree = "<group>"; };
+		D272EDB31AB8FAFC00330F59 /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToolViewInputText@2x.png"; sourceTree = "<group>"; };
+		D272EDB41AB8FAFC00330F59 /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
+		D272EDB51AB8FAFC00330F59 /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
+		D272EDB61AB8FAFC00330F59 /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
+		D272EDB71AB8FAFC00330F59 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
+		D272EDB81AB8FAFC00330F59 /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
+		D272EDB91AB8FAFC00330F59 /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
+		D272EDBA1AB8FAFC00330F59 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
+		D272EDBB1AB8FAFC00330F59 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
+		D272EDBC1AB8FAFC00330F59 /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
+		D272EDBD1AB8FAFC00330F59 /* UMFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMFeedback.h; sourceTree = "<group>"; };
+		D272EDBF1AB8FAFC00330F59 /* libUMOpus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMOpus.a; sourceTree = "<group>"; };
+		D272EDC01AB8FAFC00330F59 /* UMOpus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMOpus.h; sourceTree = "<group>"; };
+		D272EDC11AB8FAFC00330F59 /* UMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMRecorder.h; sourceTree = "<group>"; };
+		D272EDC21AB8FAFC00330F59 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
+		D272EDD41AB8FB6300330F59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D2C923051AB5B520007126AB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D2CF1CA91AB41A2F008AEB4D /* EasternPioneerBusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasternPioneerBusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF1CAD1AB41A2F008AEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +196,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D272EDD51AB8FB6300330F59 /* AVFoundation.framework in Frameworks */,
+				D272EDD31AB8FAFC00330F59 /* libUMOpus.a in Frameworks */,
+				D272EDC41AB8FAFC00330F59 /* libUMFeedback.a in Frameworks */,
 				D25D4EB31AB7363F000ED00B /* libz.dylib in Frameworks */,
 				D2CF1CF11AB425D8008AEB4D /* libxml2.dylib in Frameworks */,
 				D2CF1CE41AB4216C008AEB4D /* libc++.dylib in Frameworks */,
@@ -174,9 +217,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D272EDAA1AB8FAFC00330F59 /* UMengFeedback_SDK_2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D272EDAB1AB8FAFC00330F59 /* UMFeedbackLocalizable.strings */,
+				D272EDAD1AB8FAFC00330F59 /* libUMFeedback.a */,
+				D272EDAE1AB8FAFC00330F59 /* Resources */,
+				D272EDBD1AB8FAFC00330F59 /* UMFeedback.h */,
+				D272EDBE1AB8FAFC00330F59 /* UMOpus */,
+				D272EDC11AB8FAFC00330F59 /* UMRecorder.h */,
+			);
+			path = UMengFeedback_SDK_2.1;
+			sourceTree = "<group>";
+		};
+		D272EDAE1AB8FAFC00330F59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D272EDAF1AB8FAFC00330F59 /* bubble_min@2x.png */,
+				D272EDB01AB8FAFC00330F59 /* cancel@2x.png */,
+				D272EDB11AB8FAFC00330F59 /* microphone@2x.png */,
+				D272EDB21AB8FAFC00330F59 /* save@2x.png */,
+				D272EDB31AB8FAFC00330F59 /* ToolViewInputText@2x.png */,
+				D272EDB41AB8FAFC00330F59 /* ToolViewInputTextHL@2x.png */,
+				D272EDB51AB8FAFC00330F59 /* ToolViewInputVoice@2x.png */,
+				D272EDB61AB8FAFC00330F59 /* ToolViewInputVoiceHL@2x.png */,
+				D272EDB71AB8FAFC00330F59 /* umeng_fb_audio_dialog_cancel@2x.png */,
+				D272EDB81AB8FAFC00330F59 /* umeng_fb_audio_dialog_content@2x.png */,
+				D272EDB91AB8FAFC00330F59 /* umeng_fb_audio_play_01@2x.png */,
+				D272EDBA1AB8FAFC00330F59 /* umeng_fb_audio_play_02@2x.png */,
+				D272EDBB1AB8FAFC00330F59 /* umeng_fb_audio_play_03@2x.png */,
+				D272EDBC1AB8FAFC00330F59 /* umeng_fb_audio_play_default@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D272EDBE1AB8FAFC00330F59 /* UMOpus */ = {
+			isa = PBXGroup;
+			children = (
+				D272EDBF1AB8FAFC00330F59 /* libUMOpus.a */,
+				D272EDC01AB8FAFC00330F59 /* UMOpus.h */,
+			);
+			path = UMOpus;
+			sourceTree = "<group>";
+		};
 		D2CF1CA01AB41A2F008AEB4D = {
 			isa = PBXGroup;
 			children = (
+				D272EDD41AB8FB6300330F59 /* AVFoundation.framework */,
+				D272EDAA1AB8FAFC00330F59 /* UMengFeedback_SDK_2.1 */,
 				D25D4EB21AB7363F000ED00B /* libz.dylib */,
 				D25D4EAC1AB73584000ED00B /* libMobClickLibrary.a */,
 				D25D4EAD1AB73584000ED00B /* MobClick.h */,
@@ -371,6 +459,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D2CF1CA01AB41A2F008AEB4D;
 			productRefGroup = D2CF1CAA1AB41A2F008AEB4D /* Products */;
@@ -426,19 +515,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CF1D171AB4850E008AEB4D /* live_help.png in Resources */,
+				D272EDCD1AB8FAFC00330F59 /* umeng_fb_audio_dialog_cancel@2x.png in Resources */,
 				D2CF1D151AB4850E008AEB4D /* headset_mic.png in Resources */,
 				D2CF1CB41AB41A2F008AEB4D /* Main.storyboard in Resources */,
+				D272EDCB1AB8FAFC00330F59 /* ToolViewInputVoice@2x.png in Resources */,
+				D272EDCF1AB8FAFC00330F59 /* umeng_fb_audio_play_01@2x.png in Resources */,
+				D272EDC81AB8FAFC00330F59 /* save@2x.png in Resources */,
+				D272EDC51AB8FAFC00330F59 /* bubble_min@2x.png in Resources */,
+				D272EDD01AB8FAFC00330F59 /* umeng_fb_audio_play_02@2x.png in Resources */,
+				D272EDCA1AB8FAFC00330F59 /* ToolViewInputTextHL@2x.png in Resources */,
 				D2CF1D161AB4850E008AEB4D /* keyboard_arrow_right.png in Resources */,
+				D272EDC91AB8FAFC00330F59 /* ToolViewInputText@2x.png in Resources */,
+				D272EDCE1AB8FAFC00330F59 /* umeng_fb_audio_dialog_content@2x.png in Resources */,
 				D2CF1D1B1AB4850E008AEB4D /* sync.png in Resources */,
+				D272EDD11AB8FAFC00330F59 /* umeng_fb_audio_play_03@2x.png in Resources */,
 				D2CF1D111AB4850E008AEB4D /* access_alarms.png in Resources */,
+				D272EDCC1AB8FAFC00330F59 /* ToolViewInputVoiceHL@2x.png in Resources */,
 				D2CF1D131AB4850E008AEB4D /* directions_bus.png in Resources */,
+				D272EDD21AB8FAFC00330F59 /* umeng_fb_audio_play_default@2x.png in Resources */,
+				D272EDC71AB8FAFC00330F59 /* microphone@2x.png in Resources */,
 				D2CF1D141AB4850E008AEB4D /* done.png in Resources */,
 				D2CF1D121AB4850E008AEB4D /* clear.png in Resources */,
+				D272EDC61AB8FAFC00330F59 /* cancel@2x.png in Resources */,
 				D2CF1D191AB4850E008AEB4D /* menu.png in Resources */,
 				D2CF1D1C1AB4850E008AEB4D /* visibility.png in Resources */,
 				D2CF1D181AB4850E008AEB4D /* location.png in Resources */,
 				D2CF1CB91AB41A2F008AEB4D /* LaunchScreen.xib in Resources */,
 				D2CF1CB61AB41A2F008AEB4D /* Images.xcassets in Resources */,
+				D272EDC31AB8FAFC00330F59 /* UMFeedbackLocalizable.strings in Resources */,
 				D2CF1D1A1AB4850E008AEB4D /* settings_applications.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +603,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D272EDAB1AB8FAFC00330F59 /* UMFeedbackLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D272EDAC1AB8FAFC00330F59 /* Base */,
+				D272EDC21AB8FAFC00330F59 /* zh-Hans */,
+			);
+			name = UMFeedbackLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		D2CF1CB21AB41A2F008AEB4D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -615,6 +728,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UMengFeedback_SDK_2.1",
+					"$(PROJECT_DIR)/UMengFeedback_SDK_2.1/UMOpus",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -640,6 +755,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UMengFeedback_SDK_2.1",
+					"$(PROJECT_DIR)/UMengFeedback_SDK_2.1/UMOpus",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
