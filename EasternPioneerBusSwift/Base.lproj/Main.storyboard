@@ -18,7 +18,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yw9-7u-c9d" id="rVu-jz-C4r">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="directions_bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-9U-Jna">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="directions_bus" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-9U-Jna">
                                             <rect key="frame" x="8" y="-2" width="48" height="48"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZo-Jo-umH">
@@ -61,10 +61,10 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ECJ-7F-sEz" id="7ci-Vl-JO4">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-dh-g53">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-dh-g53">
                                             <rect key="frame" x="8" y="-2" width="48" height="48"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="keyboard_arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-wT-nMS">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="keyboard_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-wT-nMS">
                                             <rect key="frame" x="544" y="-2" width="48" height="48"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8n-le-765">
@@ -87,12 +87,12 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="东方时尚驾校班车" id="y5K-h3-gi0">
-                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="GT8-hJ-BXy" userLabel="线路">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="GT8-hJ-BXy" userLabel="线路">
                             <connections>
                                 <action selector="busLineTapped:" destination="zvG-OA-6RT" id="zrr-R3-iwQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="settings_applications.png" id="HhO-RF-ysl" userLabel="设置">
+                        <barButtonItem key="rightBarButtonItem" image="settings_applications" id="HhO-RF-ysl" userLabel="设置">
                             <connections>
                                 <segue destination="B7H-lB-I7r" kind="show" identifier="segue_setting" id="X5I-vR-W1g"/>
                             </connections>
@@ -124,7 +124,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BHF-q1-xQO" id="gCf-Ku-QUY">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sync.png" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-UC-gDe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sync" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-UC-gDe">
                                                     <rect key="frame" x="8" y="0.0" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下载数据" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfz-ml-Kdt">
@@ -141,7 +141,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwW-Xq-esX" id="4oL-iU-8sh">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clear.png" translatesAutoresizingMaskIntoConstraints="NO" id="M01-6H-X6d">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clear" translatesAutoresizingMaskIntoConstraints="NO" id="M01-6H-X6d">
                                                     <rect key="frame" x="8" y="-2" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清空缓存" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM9-0u-B9k">
@@ -158,7 +158,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ofz-Yb-5vH" id="Pa2-1A-hrm">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headset_mic.png" translatesAutoresizingMaskIntoConstraints="NO" id="FX4-Of-Lhq">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headset_mic" translatesAutoresizingMaskIntoConstraints="NO" id="FX4-Of-Lhq">
                                                     <rect key="frame" x="8" y="-2" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户反馈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YK-8e-TW4">
@@ -190,13 +190,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clear.png" width="48" height="48"/>
-        <image name="directions_bus.png" width="48" height="48"/>
-        <image name="headset_mic.png" width="48" height="48"/>
-        <image name="keyboard_arrow_right.png" width="48" height="48"/>
-        <image name="location.png" width="48" height="48"/>
-        <image name="menu.png" width="48" height="48"/>
-        <image name="settings_applications.png" width="48" height="48"/>
-        <image name="sync.png" width="48" height="48"/>
+        <image name="clear" width="48" height="48"/>
+        <image name="directions_bus" width="48" height="48"/>
+        <image name="headset_mic" width="48" height="48"/>
+        <image name="keyboard_arrow_right" width="48" height="48"/>
+        <image name="location" width="48" height="48"/>
+        <image name="menu" width="48" height="48"/>
+        <image name="settings_applications" width="48" height="48"/>
+        <image name="sync" width="48" height="48"/>
     </resources>
 </document>
