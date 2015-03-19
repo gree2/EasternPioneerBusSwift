@@ -91,15 +91,21 @@ class BusStopViewController: UITableViewController,
         return cell
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier{
+            if identifier == "segue_setting"{
+                //self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .UIBarButtonItemStyleBoardered, target: nil, action: nil, )
+                self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .Bordered, target: nil, action: "")
+            }
+        }
     }
-    */
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

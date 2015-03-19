@@ -45,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcV-zB-82O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="129"/>
+            <point key="canvasLocation" x="459" y="786"/>
         </scene>
         <!--BusStopViewController-->
         <scene sceneID="kcI-kr-SjN">
@@ -94,7 +94,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="settings_applications.png" id="HhO-RF-ysl" userLabel="设置">
                             <connections>
-                                <action selector="settingTapped:" destination="zvG-OA-6RT" id="XUt-5o-BxG"/>
+                                <segue destination="B7H-lB-I7r" kind="show" identifier="segue_setting" id="X5I-vR-W1g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -178,9 +178,7 @@
                             <outlet property="delegate" destination="B7H-lB-I7r" id="72e-BH-Feb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="设置" id="Oh4-XI-2j4">
-                        <barButtonItem key="leftBarButtonItem" title="&lt; 返回" id="ZC8-Ah-E7k"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="设置" id="Oh4-XI-2j4"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableview" destination="Kou-ni-f5T" id="9QN-a3-Pbb"/>
@@ -188,7 +186,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="030-Fl-Sa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="129"/>
+            <point key="canvasLocation" x="1159" y="129"/>
         </scene>
     </scenes>
     <resources>

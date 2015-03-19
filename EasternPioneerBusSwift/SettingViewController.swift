@@ -33,9 +33,9 @@ class SettingViewController: UITableViewController,
         //view.backgroundColor = UIColor.redColor()
     }
 
-    @IBAction func backTapped(sender: AnyObject) {
-        delegate?.backTapped()
-    }
+//    @IBAction func backTapped(sender: AnyObject) {
+//        self.navigationController?.popToRootViewControllerAnimated(true)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
