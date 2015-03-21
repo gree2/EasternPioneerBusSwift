@@ -94,7 +94,7 @@ class BusStopViewController: UITableViewController,
         return cell
     }
     
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let busStop = busStops?[UInt(indexPath.row)] as? BusStop{
             performSegueWithIdentifier("segue_stop_detail", sender: busStop)
         }
@@ -111,11 +111,10 @@ class BusStopViewController: UITableViewController,
                 case "segue_setting":
                     self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .Bordered, target: nil, action: "")
                 case "segue_stop_detail":
-                    if let busStop = sender as? BusStop{
-                        let backTitle = String(busStop.stopIndex) + " " + busStop.stopName
-                        println(backTitle)
-                        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: backTitle, style: .Bordered, target: nil, action: "")
-                    }
+                    let busStop = sender as? BusStop
+                    let backTitle = String(busStop!.stopIndex) + " " + busStop!.stopName
+                    println(backTitle)
+                    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: backTitle, style: .Bordered, target: nil, action: "")
                 default:break
             }
         }

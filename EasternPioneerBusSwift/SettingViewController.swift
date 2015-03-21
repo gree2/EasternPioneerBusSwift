@@ -42,7 +42,7 @@ class SettingViewController: UITableViewController,
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var row = indexPath.row;
         switch(row){
         case 0:
@@ -82,9 +82,9 @@ class SettingViewController: UITableViewController,
     }
     
     func feedback(){
-        self.presentViewController(UMFeedback.feedbackViewController(), animated: true){ () -> Void in }
+        //self.presentViewController(UMFeedback.feedbackViewController(), animated: true){ () -> Void in }
 
-        //navigationController?.pushViewController(UMFeedback.feedbackViewController(), animated: true)
+        navigationController?.pushViewController(UMFeedback.feedbackViewController(), animated: true)
     }
 
     /*
