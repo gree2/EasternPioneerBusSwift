@@ -67,8 +67,9 @@ class BusLineViewController: UITableViewController,
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let busLine = busLines[UInt(indexPath.row)] as BusLine
-        delegate?.busLineSelected(busLine)
+        if let busLine = busLines[UInt(indexPath.row)] as? BusLine{
+            delegate?.busLineSelected(busLine)
+        }
     }
 
     /*

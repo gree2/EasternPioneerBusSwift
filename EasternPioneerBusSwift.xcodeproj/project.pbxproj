@@ -270,11 +270,8 @@
 				D2CF1CF91AB46EE5008AEB4D /* Controller */,
 				D2CF1CF21AB42817008AEB4D /* Model */,
 				D2CF1CE81AB4255C008AEB4D /* HTMLDocument */,
-				D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */,
 				D2CF1CB01AB41A2F008AEB4D /* ViewController.swift */,
 				D2CF1CB21AB41A2F008AEB4D /* Main.storyboard */,
-				D2CF1CB51AB41A2F008AEB4D /* Images.xcassets */,
-				D2CF1CB71AB41A2F008AEB4D /* LaunchScreen.xib */,
 				D2CF1CAC1AB41A2F008AEB4D /* Supporting Files */,
 			);
 			path = EasternPioneerBusSwift;
@@ -283,7 +280,10 @@
 		D2CF1CAC1AB41A2F008AEB4D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF1CAE1AB41A2F008AEB4D /* AppDelegate.swift */,
+				D2CF1CB51AB41A2F008AEB4D /* Images.xcassets */,
 				D2CF1CAD1AB41A2F008AEB4D /* Info.plist */,
+				D2CF1CB71AB41A2F008AEB4D /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

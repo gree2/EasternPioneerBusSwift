@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zvG-OA-6RT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zvG-OA-6RT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -39,13 +39,15 @@
                             <outlet property="delegate" destination="PiX-Wa-ms3" id="F4V-gX-F5h"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="东方时尚驾校班车" id="cRv-wf-9qN"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableview" destination="uyR-mc-omJ" id="tsa-LC-9Ir"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcV-zB-82O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="786"/>
+            <point key="canvasLocation" x="-265" y="129"/>
         </scene>
         <!--BusStopViewController-->
         <scene sceneID="kcI-kr-SjN">
@@ -102,6 +104,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableview" destination="APD-EL-eZg" id="mmf-Gi-gNS"/>
+                        <segue destination="hS6-jg-QM7" kind="show" identifier="segue_stop_detail" id="C8D-17-55x"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tp1-qB-hqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,8 +191,56 @@
             </objects>
             <point key="canvasLocation" x="1159" y="129"/>
         </scene>
+        <!--DetailViewController-->
+        <scene sceneID="koc-ke-6F6">
+            <objects>
+                <tableViewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="hS6-jg-QM7" customClass="DetailViewController" customModule="EasternPioneerBusSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="93M-2g-jRg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StopDetailCell" id="PcJ-9l-vQM" customClass="StopDetailCell" customModule="EasternPioneerBusSwift" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PcJ-9l-vQM" id="86f-zW-daE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="access_alarms" translatesAutoresizingMaskIntoConstraints="NO" id="pIp-z2-fVD">
+                                            <rect key="frame" x="8" y="-2" width="48" height="48"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPQ-Li-erL">
+                                            <rect key="frame" x="64" y="11" width="528" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailLabel" destination="hPQ-Li-erL" id="PNR-hU-CEH"/>
+                                    <outlet property="iconImageView" destination="pIp-z2-fVD" id="uvZ-pl-hHZ"/>
+                                    <outlet property="textLabel" destination="hPQ-Li-erL" id="b7s-CX-PTa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hS6-jg-QM7" id="0Vv-tn-GBm"/>
+                            <outlet property="delegate" destination="hS6-jg-QM7" id="EXL-gt-ozV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CBO-CZ-VKJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableview" destination="93M-2g-jRg" id="2wz-1u-ngQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87h-a9-A93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="852"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="access_alarms" width="48" height="48"/>
         <image name="clear" width="48" height="48"/>
         <image name="directions_bus" width="48" height="48"/>
         <image name="headset_mic" width="48" height="48"/>

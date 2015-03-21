@@ -55,6 +55,9 @@ class BusStopViewController: UITableViewController,
     }
     
     func busLineSelected(busLine: BusLine) {
+        // set title
+        title = String(busLine.lineIndex) + " " + busLine.lineName
+        println(title!)
         busStops = BusStop.objectsWhere("busLineId = \(busLine.id)")
             .sortedResultsUsingProperty("stopIndex", ascending: true)
         tableview.reloadData()
@@ -90,7 +93,12 @@ class BusStopViewController: UITableViewController,
         cell.configure(busStops?[UInt(indexPath.row)] as BusStop)
         return cell
     }
-
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        if let busStop = busStops?[UInt(indexPath.row)] as? BusStop{
+            performSegueWithIdentifier("segue_stop_detail", sender: busStop)
+        }
+    }
     
     // MARK: - Navigation
 
@@ -99,13 +107,19 @@ class BusStopViewController: UITableViewController,
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         if let identifier = segue.identifier{
-            if identifier == "segue_setting"{
-                //self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .UIBarButtonItemStyleBoardered, target: nil, action: nil, )
-                self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .Bordered, target: nil, action: "")
+            switch identifier{
+                case "segue_setting":
+                    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .Bordered, target: nil, action: "")
+                case "segue_stop_detail":
+                    if let busStop = sender as? BusStop{
+                        let backTitle = String(busStop.stopIndex) + " " + busStop.stopName
+                        println(backTitle)
+                        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: backTitle, style: .Bordered, target: nil, action: "")
+                    }
+                default:break
             }
         }
     }
-    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

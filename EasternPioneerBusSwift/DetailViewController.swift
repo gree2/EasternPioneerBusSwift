@@ -8,8 +8,11 @@
 
 import UIKit
 
-class DetailViewController: UITableViewController {
+class DetailViewController: UITableViewController,
+UITableViewDataSource, UITableViewDelegate{
 
+    @IBOutlet var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +21,7 @@ class DetailViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableview.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,5 +107,11 @@ class DetailViewController: UITableViewController {
         super.viewWillDisappear(animated)
         MobClick.endLogPageView("DetailViewController")
     }
+
+}
+
+class StopDetailCell: UITableViewCell{
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var detailLabel: UILabel!
 
 }
